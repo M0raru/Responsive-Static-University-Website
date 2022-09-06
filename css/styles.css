@@ -399,7 +399,7 @@ h4 {
 
 .about__btn {
     justify-self: center;
-    max-width: 120px;
+    max-width: 200px;
 }
 
 .cards {
@@ -417,3 +417,92 @@ h4 {
         grid-row: 1 /2;
     }
 }
+
+/* CAMPUS */
+.campus {
+    text-align: center;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.campus__title {
+    margin-top: 0;
+    font-size: 4rem;
+    color: var(--color-accent);
+}
+
+.campus__sub-title {
+    opacity: .3;
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.campus__text {
+    max-width: 500px;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+    padding: 5rem;
+    font-weight: 600;
+}
+
+.campus__text::before {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 25px;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.text__info {
+    display: block;
+    margin-top: 0;
+    text-align: left;
+    opacity: .3;
+    font-size: 1.4rem;
+}
+
+.campus__image {
+    max-width: 400px;
+    width: 100%;
+    border: 5px solid var(--color-primary);
+}
+
+.activities__picture {
+    align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .campus {
+        margin-top: 5rem;
+    }
+
+    .campus__text {
+        margin: 0;
+        justify-self: end;
+    }
+
+    .activities__picture {
+        justify-self: start;
+    }
+
+    .picture--first {
+        justify-self: end;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .text--second {
+        justify-self: center;
+        grid-column: 2 / 3;
+    }
+}
+
+
+
