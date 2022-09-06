@@ -118,6 +118,7 @@ h4 {
 .btn--primary:hover {
     color: var(--secondary-color);
     background-color: var(--color-primary);
+    border: 1px solid var(--secondary-color);
 }
 
 .btn--secondary { 
@@ -504,5 +505,74 @@ h4 {
     }
 }
 
+/* DEGREES */
+.degrees {
+    color: var(--secondary-color);
+    height: 100%;
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+.category__title {
+    margin: 2rem 0 0;
+    text-indent: 16px;
+}
+
+.degree__title {
+    margin-top: 0;
+    font-size: 4rem;
+}
+
+.degree__subtitle {
+    opacity: 0.3;
+}
+
+.degree__content {
+    margin-top: 1rem;
+    justify-self: center;
+    text-align: left;
+    text-indent: 20px;
+    max-width: 600px;
+}
+
+.degree-tag {
+    display: block;
+    font-size: 1.4rem;
+    opacity: .3;
+    word-spacing: 15px;
+}
+
+.degree__image {
+    width: 100%;
+    margin-top: 1rem;
+    border: 5px solid var(--secondary-color);
+    max-width: 400px;
+}
+
+.degree__button {
+    width: 100%;
+    text-align: center;
+}
+
+.width--1024 {
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 2rem;
+    max-width: 1024px;
+}
+
+@media screen and (min-width: 1024px) {
+    .category__title {
+        font-size: 4rem;
+    }
+
+    .degree__picture {
+        grid-column: 2 / 3;
+    }
+
+    .degree--first {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
 
 
