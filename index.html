@@ -19,74 +19,73 @@
     ></script>
   </head>
   <body>
-    <section class="degrees">
-      <h2 class="degree__title">Obtain a degree</h2>
-      <p class="degree__subtitle">
-        Degree is a calification in some category that helps you grow in your
-        career
-      </p>
-      <div class="grid grid--1x2 width--1024">
-        <picture>
-          <h3 class="category__title">Engineering</h3>
-          <source
-            type="image/webp"
-            srcset="images/engineer.webp 1x, images/engineer@x2.webp 2x"
-          />
-          <source
-            type="image/"
-            srcset="images/engineer.jpg 1x, images/engineer@x2.jpg 2x"
-          />
-          <img
-            class="degree__image"
-            src="images/engineer.jpg"
-            alt="A univerity campus full with students"
-          />
-        </picture>
-        <div class="degree__content">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-            <span class="degree-tag">enginer science degree</span>
+    <section class="feedback">
+      <div class="grid grid--1x2 feedback__grid">
+        <div class="feedback__content">
+          <h2 class="feedback__title">Give us Feedback</h2>
+          <p class="feedback__subtitle">
+            Have ideas about how can we improve our site? or you want to be a
+            student here?
           </p>
-          <button class="btn btn--primary degree__button">Enroll</button>
-        </div>
-      </div>
-      <div class="grid grid--1x2 width--1024">
-        <picture class="degree__picture">
-          <h3 class="category__title">Computer Science</h3>
-          <source
-            type="image/webp"
-            srcset="
-              images/computer-science.webp    1x,
-              images/computer-science@x2.webp 2x
-            "
-          />
-          <source
-            type="image/"
-            srcset="
-              images/computer-science.jpg    1x,
-              images/computer-science@x2.jpg 2x
-            "
-          />
-          <img
-            class="degree__image"
-            src="images/computer-science.jpg"
-            alt="A univerity campus full with students"
-          />
-        </picture>
-        <div class="degree__content degree--first">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-            <span class="degree-tag">programming binary C++</span>
+          <p class="feedback__subtitle">
+            Leave us an Feedback and we will contact you as soon as possible
           </p>
-          <button class="btn btn--primary degree__button">Enroll</button>
         </div>
+        <form class="feedback__form">
+          <h3 class="form__title">Write your opinion here</h3>
+          <fieldset class="form__fieldset">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <label for="feedback">Feedback</label>
+            <textarea
+              cols="25"
+              rows="10"
+              id="feedback"
+              placeholder="Enter your opinion here..."
+              maxlength="500"
+              minlength="50"
+              required
+            >
+            </textarea>
+
+            <button class="btn btn--secondary btn__feedback" type="submit">
+              Send
+            </button>
+          </fieldset>
+        </form>
       </div>
+
+      <footer class="footer">
+        <span class="footer__title">Social</span>
+        <div class="grid grid--1x3 footer__grid">
+          <div class="footer__icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div>
+            <ul class="list footer__list list1">
+              <li class="list__item"><a href="#">University</a></li>
+              <li class="list__item"><a href="#">Visit Us</a></li>
+              <li class="list__item"><a href="#">Q & A</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list footer__list list2">
+              <li class="list__item"><a href="#">Classes</a></li>
+              <li class="list__item"><a href="#">Studies</a></li>
+              <li class="list__item"><a href="#">More</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__text">Copyright c 2022</p>
+      </footer>
     </section>
     <script src="main.js"></script>
   </body>
