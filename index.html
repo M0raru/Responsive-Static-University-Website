@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A static university website for all the students around the world!">
+    <meta name="keywords" content="University, Static, Website, Student, Education, University Website">
     <title>Static University Website</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,13 +16,237 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/e0f51ba30c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section class="feedback">
+    <nav class="nav collapsible collapsible--expanded">
+      <p class="nav__title">University</p>
+      <i class="fa-solid fa-bars"></i>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#campus">Campus</a></li>
+        <li class="nav__item"><a href="#degrees">Degrees</a></li>
+        <li class="nav__item nav__contact"><a href="#feedback">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="grid grid--1x2">
+        <div class="hero__content" data-aos="zoom-in">
+          <h1 class="hero__title">Static University</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, placeat
+            cumque libero neque enim molestiae ut nostrum quis, maiores ratione
+            sunt, voluptates velit magni aliquid.
+          </p>
+          <a href="#about" class="link-arrow"
+            >Enroll Now<i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              images/hero-student@700.webp  1x,
+              images/hero-student@1168.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="images/hero-student@700.png 1x, images/hero-student@1168.png 2x"
+          />
+          <img
+            class="hero__image"
+            src="images/hero-student_gi1hxp.png"
+            alt="A young happy student"
+          />
+        </picture>
+      </div>
+    </section>
+    <section id="about" class="about" data-aos="fade-up">
+      <h2 class="about__title">Why Static Unviersity?</h2>
+      <div class="grid grid--1x2">
+          
+        <div class="cards">
+        <div class="card">
+          <svg class="icon">
+            <use xlink:href=images/sprite.svg#graduated></use>
+          </svg>
+          <h3 class="card__title">2000+</h3>
+          <p class="card__text">new students every year</p>
+        </div>
+        <div class="card">
+          <svg class="icon">
+            <use xlink:href=images/sprite.svg#sports></use>
+          </svg>
+          <h3 class="card__title">Sports</h3>
+          <p class="card__text">Football, Basketball</p>
+        </div>
+        <div class="card">
+          <svg class="icon">
+            <use xlink:href=images/sprite.svg#key></use>
+          </svg>
+          <h3 class="card__title">Rent</h3>
+          <p class="card__text">no rent for students</p>
+        </div>
+        <div class="card">
+          <svg class="icon">
+            <use xlink:href=images/sprite.svg#gold-medal></use>
+          </svg>
+          <h3 class="card__title">Prizes</h3>
+          <p class="card__text">best students are rewarded</p>
+        </div>
+        <div class="card">
+          <svg class="icon">
+            <use xlink:href=images/sprite.svg#book></use>
+          </svg>
+          <h3 class="card__title">Library</h3>
+          <p class="card__text">free books for students</p>
+        </div>
+        <div class="card">
+          <svg class="icon">
+            <use xlink:href=images/sprite.svg#bus></use>
+          </svg>
+          <h3 class="card__title">Bus</h3>
+          <p class="card__text">free transport for students</p>
+        </div>
+      </div>
+      <div class="about__content">
+          <h4 class="content__title">Let's Study!</h4>
+          <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus officia magni minima ipsa itaque, assumenda soluta corrupti dicta a.</p>
+          <button class="btn btn--secondary about__btn">Enroll</button>
+        </div>
+      </div>
+    </section>
+    <section id="campus" class="campus" data-aos="fade-up">
+      <h2 class="campus__title">Our Campus</h2>
+      <p class="campus__sub-title">The place where students can rest</p>
+      <div class="grid grid--1x2">
+        <p class="campus__text text--second">
+          As a student sometimes you need to connect with the nature after a hard
+          exman, <span class="primary">Campus</span> is the perfect place to do
+          this.
+          <span class="text__info">24/7 with your friends</span>
+        </p>
+        <picture class="activities__picture picture--first">
+          <source
+            type="image/webp"
+            srcset="images/campus-ground.webp 1x, images/campus-ground@x2.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/campus-ground.jpg 1x, images/campus-ground@x2.jpg 2x"
+          />
+          <img
+            class="campus__image"
+            src="images/campus-ground.jpg"
+            alt="A univerity campus full with students"
+          />
+        </picture>
+      </div>
+      <div class="grid grid--1x2">
+        <p class="campus__text">
+          Anything is better with friends, every week, campus will organize an
+          activity for you to participate and have some fun.
+          <span class="text__info">don’t miss them</span>
+        </p>
+        <picture class="activities__picture">
+          <source
+            type="image/webp"
+            srcset="
+              images/campus-activities.webp    1x,
+              images/campus-activities@x2.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              images/campus-activities.jpg    1x,
+              images/campus-activities@x2.jpg 2x
+            "
+          />
+          <img
+            class="campus__image"
+            src="images/campus-activities.jpg"
+            alt="Students doing campus activities"
+          />
+        </picture>
+      </div>
+    </section>
+    <section id="degrees" class="degrees" data-aos="fade-up">
+      <h2 class="degree__title">Obtain a degree in</h2>
+      <p class="degree__subtitle">
+        Degree is a calification in some category that helps you grow in your career
+      </p>
+      <div class="grid grid--1x2 width--1024">
+        <div class="category__title">Engineering
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/engineer.webp 1x, images/engineer@x2.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/engineer.jpg 1x, images/engineer@x2.jpg 2x"
+            />
+            <img
+              class="degree__image"
+              src="images/engineer.jpg"
+              alt="A device that measures electricity"
+            />
+          </picture>
+        </div>
+        <div class="degree__content">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+            <span class="degree-tag">enginer science degree</span>
+          </p>
+          <button class="btn btn--primary degree__button">Enroll</button>
+        </div>
+      </div>
+      <div class="grid grid--1x2 width--1024">
+        <div class="category__title">Computer Science
+        <picture class="degree__picture">
+          <source
+            type="image/webp"
+            srcset="
+              images/computer-science.webp    1x,
+              images/computer-science@x2.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              images/computer-science.jpg    1x,
+              images/computer-science@x2.jpg 2x
+            "
+          />
+          <img
+            class="degree__image"
+            src="images/computer-science.jpg"
+            alt="A pc motherboard used for building computers"
+          />
+        </picture>
+      </div>
+        <div class="degree__content degree--first">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+            <span class="degree-tag">programming binary C++</span>
+          </p>
+          <button class="btn btn--primary degree__button">Enroll</button>
+        </div>
+      </div>
+    </section>
+    <section id="feedback" class="feedback" data-aos="fade-up">
       <div class="grid grid--1x2 feedback__grid">
         <div class="feedback__content">
           <h2 class="feedback__title">Give us Feedback</h2>
@@ -42,25 +269,25 @@
               placeholder="example@gmail.com"
               required
             />
-            <label for="feedback">Feedback</label>
+            <label for="textarea">Feedback</label>
             <textarea
-              cols="25"
+              cols="20"
               rows="10"
-              id="feedback"
+              id="textarea"
               placeholder="Enter your opinion here..."
               maxlength="500"
               minlength="50"
               required
             >
             </textarea>
-
+    
             <button class="btn btn--secondary btn__feedback" type="submit">
               Send
             </button>
           </fieldset>
         </form>
       </div>
-
+    
       <footer class="footer">
         <span class="footer__title">Social</span>
         <div class="grid grid--1x3 footer__grid">
@@ -87,6 +314,11 @@
         <p class="footer__text">Copyright c 2022</p>
       </footer>
     </section>
+    
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

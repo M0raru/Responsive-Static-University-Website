@@ -15,6 +15,7 @@
 html {
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -380,6 +381,7 @@ h4 {
     text-align: center;
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 10rem;
 }
 
 .about__content {
@@ -428,7 +430,7 @@ h4 {
 .campus {
     text-align: center;
     max-width: 1240px;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 .campus__title {
@@ -520,7 +522,9 @@ h4 {
 
 .category__title {
     margin: 2rem 0 0;
-    text-indent: 16px;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
 }
 
 .degree__title {
@@ -585,6 +589,7 @@ h4 {
     background-color: var(--color-primary);
     text-align: center;
     color: var(--secondary-color);
+    padding-top: 10rem;
 }
 
 .feedback__grid {
@@ -643,7 +648,6 @@ label {
 textarea {
     font-size: 1.5rem;
     resize: none;
-    text-indent: 0;
 }
 
 .btn__feedback {
