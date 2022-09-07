@@ -11,6 +11,15 @@ You can see the site live [here](https://m0raru.github.io/Responsive-Static-Univ
 
 ## Parcel
 - [Parcel](https://parceljs.org/) - Builded and minyfied with Parcel installed used node.js via npm
+
+## Website quality
+- Performance 94/100
+- Accessibility 97/100
+- Best Practices 100/100
+- SEO 100/100
+
+Verified with [measure page quality](https://web.dev/measure/).
+
 ## License
 
 GPL-3.0 license
